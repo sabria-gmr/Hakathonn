@@ -31,7 +31,7 @@ const AdminSignIn = () => {
   return (
     <div className="flex justify-center items-center mt-40">
       <form className="w-96 h-full p-6 bg-indigo-50  rounded shadow-xl" onSubmit={handleSubmit}>
-        <h2 className="text-2xl text-indigo-900 font-semibold mb-4">Admin Sign In</h2>
+        <h2 className="text-2xl text-blue font-semibold mb-4"> Sign In</h2>
 
         {error && (
           <div className="mb-4 text-red-500">
@@ -43,7 +43,7 @@ const AdminSignIn = () => {
           <label className="block text-gray-700 text-sm font-bold mb-2">Username</label>
           <input
             type="text"
-            className="w-full border p-2 rounded"
+            className="w-full border p-2 rounded-lg bg-white"
             value={username}
             onChange={handleUsernameChange}
             required
@@ -54,7 +54,7 @@ const AdminSignIn = () => {
           <label className="block text-gray-700 text-sm font-bold mb-2">Password</label>
           <input
             type="password"
-            className="w-full border p-2 rounded"
+            className="w-full border p-2 rounded-lg"
             value={password}
             onChange={handlePasswordChange}
             required
@@ -64,7 +64,7 @@ const AdminSignIn = () => {
         <Link to="/dashboard">
           <button
             type="submit"
-            className="w-full h-12 bg-indigo-900  text-white rounded hover:bg-blue-600"
+            className="w-full h-12 bg-blue  text-white rounded hover:bg-blue"
           >
             Sign In
           </button>

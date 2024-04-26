@@ -3,7 +3,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 import '../pages/Admin.css'
 import "tailwindcss/tailwind.css"
 
-const newJobOffersData = [
+const visitorsData = [
   { month: 'Jan', count: 0 },
   { month: 'Feb', count: 35 },
   { month: 'Mar', count: 25 },
@@ -16,14 +16,14 @@ const newJobOffersData = [
   { month: 'Oct', count: 42 },
 ];
 
-export default function NewJobOffersChart() {
+export default function VisitorsChart() {
   return (
     <div className="h-[22rem] bg-white p-4 rounded-sm border border-gray-200 flex flex-col flex-1">
-      <strong className="text-gray-700 font-medium">Nombre de Nouvelles Offres de Stage</strong>
+      <strong className="text-blue font-medium">visiteurs au fil du temps en mois </strong>
       <div className="mt-3 w-full flex-1 text-xs">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
-            data={newJobOffersData}
+            data={visitorsData}
             margin={{ top: 20, right: 10, left: -10, bottom: 0 }}
           >  
             <CartesianGrid strokeDasharray="3 3" />

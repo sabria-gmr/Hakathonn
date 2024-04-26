@@ -8,16 +8,16 @@ import { IoFilterOutline,IoTrashOutline  } from 'react-icons/io5';
 import './Admin.css';
 
 const allUsersData = [
-  { id: '1', user_id: '23143', name: 'Shirley A. Lape', email: 'shirley@example.com', telephone: '555-1234' },
-  { id: '2', user_id: '96453', name: 'Ryan Carroll', email: 'ryan@example.com', telephone: '555-5678' },
-  { id: '3', user_id: '65345', name: 'Mason Nash', email: 'mason@example.com', telephone: '555-9876' },
-  { id: '4', user_id: '87832', name: 'Luke Parkin', email: 'luke@example.com', telephone: '555-4321' },
-  { id: '5', user_id: '09832', name: 'Anthony Fry', email: 'anthony@example.com', telephone: '555-8765' },
-  { id: '6', user_id: '12345', name: 'Emma Thompson', email: 'emma@example.com', telephone: '555-1111', },
-  { id: '7', user_id: '67890', name: 'Oliver Wilson', email: 'oliver@example.com', telephone: '555-2222' },
-  { id: '8', user_id: '34567', name: 'Sophia Davis', email: 'sophia@example.com', telephone: '555-3333' },
-  { id: '9', user_id: '45678', name: 'Ethan Johnson', email: 'ethan@example.com', telephone: '555-4444' },
-  { id: '10', user_id: '56789', name: 'Ava Smith', email: 'ava@example.com', telephone: '555-5555' },
+  { id: '1', user_id: '23143', name: 'Shirley A. Lape', email: 'shirley@example.com', telephone: '555-1234' , num_chambre:'106'},
+  { id: '2', user_id: '96453', name: 'Ryan Carroll', email: 'ryan@example.com', telephone: '555-5678', num_chambre:'10'},
+  { id: '3', user_id: '65345', name: 'Mason Nash', email: 'mason@example.com', telephone: '555-9876',num_chambre:'109' },
+  { id: '4', user_id: '87832', name: 'Luke Parkin', email: 'luke@example.com', telephone: '555-4321' ,num_chambre:'16'},
+  { id: '5', user_id: '09832', name: 'Anthony Fry', email: 'anthony@example.com', telephone: '555-8765' ,num_chambre:'1'},
+  { id: '6', user_id: '12345', name: 'Emma Thompson', email: 'emma@example.com', telephone: '555-1111',num_chambre:'176' },
+  { id: '7', user_id: '67890', name: 'Oliver Wilson', email: 'oliver@example.com', telephone: '555-2222',num_chambre:'7' },
+  { id: '8', user_id: '34567', name: 'Sophia Davis', email: 'sophia@example.com', telephone: '555-3333' ,num_chambre:'9'},
+  { id: '9', user_id: '45678', name: 'Ethan Johnson', email: 'ethan@example.com', telephone: '555-4444' ,num_chambre:'19'},
+  { id: '10', user_id: '56789', name: 'Ava Smith', email: 'ava@example.com', telephone: '555-5555',num_chambre:'15' },
 ];
 
 const Clients = ({ handleDelete, handleEdit }) => {
@@ -90,6 +90,7 @@ const Clients = ({ handleDelete, handleEdit }) => {
               <th>Nom & prenom </th>
               <th>Email</th>
               <th>Numéro de téléphone</th>
+              <th>Numéro de chambre</th>
               <th>Actions</th>
             </tr>
           </thead>
@@ -105,6 +106,7 @@ const Clients = ({ handleDelete, handleEdit }) => {
                 </td>
                 <td>{user.email}</td>
                 <td>{user.telephone}</td>
+                <td>{user.num_chambre}</td>
                 <td>
                   <button
                     onClick={() => handleDelete(user.user_id)}

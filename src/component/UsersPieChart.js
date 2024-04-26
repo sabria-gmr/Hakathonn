@@ -4,9 +4,9 @@ import "tailwindcss/tailwind.css"
 import '../pages/Admin.css'
 
 const data = [
-	{ name: 'Companies', value: 540 },
-	{ name: 'Students', value: 620 },
-	{ name: 'Teachers', value: 210 }
+	{ name: 'Check_in', value: 540 },
+	{ name: 'Check_out', value: 620 },
+	{ name: 'Booked', value: 210 }
 ]
 
 const RADIAN = Math.PI / 180
@@ -27,7 +27,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 export default function UsersPieChart() {
 	return (
 		<div className="w-[20rem] h-[22rem] bg-white p-4 rounded-sm border border-gray-200 flex flex-col">
-			<strong className="text-gray-700 font-medium">Users </strong>
+			<strong className="text-blue font-medium">Revenu Statistics </strong>
 			<div className="mt-3 w-full flex-1 text-xs">
 				<ResponsiveContainer width="100%" height="100%">
 					<PieChart width={400} height={300}>
