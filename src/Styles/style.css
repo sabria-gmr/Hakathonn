@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.chambre-background {
+    background-image: url('../assets/Group 139.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+.about-bg {
+  background-image: url('../assets/Rectangle 5.png');
+  background-size: cover;
+  background-position: center;
+ 
+}
